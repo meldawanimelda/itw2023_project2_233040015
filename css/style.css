@@ -47,7 +47,8 @@
     font-size: 2rem;
     font-weight: 700; 
     color: #000000;
-    font-style: italic;
+    display: inline-block;
+
   }
   
   .navbar .navbar-logo span {
@@ -194,8 +195,8 @@
   }
   
   .about .row .about-img img {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
     border-radius: 18px;
   }
   
@@ -221,7 +222,7 @@
   
   
   
-  /* Products Section */
+  /* Product */
   .products .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -239,7 +240,7 @@
   
   .products .product-card {
     text-align: center;
-    border: 1px solid #666;
+    border: 1px solid #524242;
     border-radius: 15px;
     padding: 1rem;
     margin: 1rem;
@@ -273,6 +274,7 @@
   
   .products .product-image img {
     height: 25rem;
+    border-radius: 15px;
   }
   
   .products .product-content h3 {
@@ -301,7 +303,7 @@
   /* service */
   .service {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 20px;
 }
 
@@ -315,9 +317,7 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
-.services .icon {
-    font-size: 3em;
-}
+
 
 .services h3 {
     font-size: 1.5em;
@@ -388,7 +388,7 @@
   /* Footer */
   
   footer {
-    background-color: black;
+    background-color:var(--primary);
     text-align: center;
     padding: 1rem 3rem;
     margin-top: 3rem;
@@ -407,7 +407,7 @@
   }
   
   footer .socials a:hover {
-    color: var(--primary);
+    color: rgb(0, 0, 0);
   }
   
 
