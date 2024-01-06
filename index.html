@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Orbitron&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Rajdhani:wght@300&family=Shadows+Into+Light&
     display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -53,17 +54,19 @@
       <h2><span>About</span> Us</h2>
 
       <div class="row">
-        <div class="about-img">
+        <div class="col-md-6">
+        <div class="card"  data-aos="fade-up"  data-aos-duration="1800">
           <img src="image/company-1.jpg" alt="about us">
         </div>
+      </div>
         <div class="content">
-          <h3>Comfortable Clothes</h3>
+          <h3>Imeh Good Girl</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid quis, consectetur atque distinctio reiciendis eos inventore explicabo harum corrupti. Minima similique distinctio quaerat odit. Reprehenderit deleniti culpa fugiat adipisci?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quasi assumenda?</p>
         </div>
       </div>
 
-     </section>
+     <!-- </section> -->
 
 
          
@@ -74,7 +77,7 @@
     <div class="row">
       <div class="product-card">
         
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-2.jpg" alt="Product 1">
         </div>
         <div class="product-icons">
@@ -89,7 +92,7 @@
       </div>
       <div class="product-card">
         
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-3.jpg" alt="Product 1">
         </div>
         <div class="product-content">
@@ -104,7 +107,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-4.jpg" alt="Product 1">
         </div>
         <div class="product-icons">
@@ -119,7 +122,7 @@
         </div>
       </div>
       <div class="product-card">
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-5.jpg" alt="Product 1">
         </div>
         <div class="product-icons">
@@ -134,7 +137,7 @@
         </div>
       </div>
       <div class="product-card">
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-6.jpg" alt="Product 1">
         </div>
         <div class="product-icons">
@@ -150,7 +153,7 @@
       </div>
       
       <div class="product-card">
-        <div class="product-image">
+        <div class="product-image" data-aos="zoom-in" data-aos-duration="1000">
           <img src="image/company-8.jpg" alt="Product 1">
         </div>
         <div class="product-icons">
@@ -172,7 +175,7 @@
 
       <!-- servis -->
       <section class="service" id="service">
-        
+  
         <div class="service">
             
             <h3>CUSTOM DESIGN</h3>
@@ -208,18 +211,18 @@
         <iframe src="https://maps.google.com/maps?q=cluster%20de%20residence%20blok%205%20no%2031%20bekasi&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
         </iframe>
 
-        <form  name="projek-contact-form"  action="">
+        <form  name="contact-form"  action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" name="nama" placeholder="Nama">
+            <input type="text" name="nama" placeholder="Name">
           </div>
           <div class="input-group">
-            <i data-feather="mail"></i>
+            <i data-feather="paperclip"></i>
             <input type="email" name="email"  placeholder="Email">
           </div>
           <div class="input-group">
             <i data-feather="message-square"></i>
-            <input type="text" class="text"  placeholder="Text">
+            <input type="text" class="text" name="pesan"  placeholder="Text">
           </div>
           <button type="submit" class="btn">Send</button>
         </form>
@@ -242,6 +245,11 @@
    <script>
       feather.replace();
   </script>
+   <!--aos  init-->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 
   <!-- Java Script -->
   <script src="js/script.js"></script>
